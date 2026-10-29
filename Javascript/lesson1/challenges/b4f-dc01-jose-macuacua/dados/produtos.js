@@ -1,4 +1,6 @@
-const produtos = [
+ 
+ export const TAXA_IVA = 0.16;
+ export const produtos = [
   { id: "P001",
      nome: "Arroz agulha 10 kg", 
     categoria: "Mercearia",
