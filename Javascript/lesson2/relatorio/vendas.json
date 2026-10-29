@@ -1,0 +1,85 @@
+[
+
+    {
+    "id": 1,
+    "cidade": "Maputo",
+    "data": "2026-10-01",
+    "produtos": [
+      { "nome": "Arroz 5kg", "quantidade": 2, "preco": 450 },
+      { "nome": "Óleo 1L", "quantidade": 1, "preco": 180 }
+    ]
+  },
+  {
+    "id": 2,
+    "cidade": "Beira",
+    "data": "2026-10-01",
+    "produtos": [{ "nome": "Açúcar 2kg", "quantidade": 3, "preco": 160 }]
+  },
+  {
+    "id": 3,
+    "cidade": "Nampula",
+    "data": "2026-10-02",
+    "produtos": [
+      { "nome": "Arroz 5kg", "quantidade": 1, "preco": 450 },
+      { "nome": "Sabão", "quantidade": 4, "preco": 35 }
+    ]
+  },
+  {
+    "id": 4,
+    "cidade": "Maputo",
+    "data": "2026-10-02",
+    "produtos": [
+      { "nome": "Farinha 10kg", "quantidade": 1, "preco": 520 },
+      { "nome": "Óleo 1L", "quantidade": 2, "preco": 180 }
+    ]
+  },
+  {
+    "id": 5,
+    "cidade": "Beira",
+    "data": "2026-10-03",
+    "produtos": [
+      { "nome": "Arroz 5kg", "quantidade": 1, "preco": 450 },
+      { "nome": "Sabão", "quantidade": 2, "preco": 35 }
+    ]
+  },
+  {
+    "id": 6,
+    "cidade": "Nampula",
+    "data": "2026-10-03",
+    "produtos": [{ "nome": "Óleo 1L", "quantidade": 3, "preco": 180 }]
+  },
+  {
+    "id": 7,
+    "cidade": "Maputo",
+    "data": "2026-10-04",
+    "produtos": [
+      { "nome": "Arroz 5kg", "quantidade": 1, "preco": 450 },
+      { "nome": "Açúcar 2kg", "quantidade": 1, "preco": 160 },
+      { "nome": "Sabão", "quantidade": 5, "preco": 35 }
+    ]
+  },
+  {
+    "id": 8,
+    "cidade": "Beira",
+    "data": "2026-10-04",
+    "produtos": [{ "nome": "Farinha 10kg", "quantidade": 2, "preco": 520 }]
+  },
+  {
+    "id": 9,
+    "cidade": "Nampula",
+    "data": "2026-10-05",
+    "produtos": [
+      { "nome": "Arroz 5kg", "quantidade": 2, "preco": 450 },
+      { "nome": "Açúcar 2kg", "quantidade": 2, "preco": 160 }
+    ]
+  },
+  {
+    "id": 10,
+    "cidade": "Maputo",
+    "data": "2026-10-05",
+    "produtos": [
+      { "nome": "Óleo 1L", "quantidade": 1, "preco": 180 },
+      { "nome": "Arroz 5kg", "quantidade": 3, "preco": 450 }
+    ]
+  }
+]
