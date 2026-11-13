@@ -1,13 +1,14 @@
 {
   "name": "b4f-dc02-jose-macuacua",
   "version": "1.0.0",
-  "description": "",
-  "main": "conversor.js",
+  "description": "Conversor de Câmbio em MT (Desafio de Código II - Bytes4Future)",
+  "main": "src/cli.js",
+  "type": "module",
   "scripts": {
-    "start": "node --watch src/conversor.js"
+    "start": "node src/cli.js",
+    "dev": "node --watch src/exemplos.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module"
+  "author": "José Macuacua",
+  "license": "ISC"
 }

@@ -1,0 +1,41 @@
+import { obterTaxas } from "./api.js";
+import { ConversorCambio } from "./conversor.js";
+import { ErroHttp, ErroMoeda } from "./erros.js";
+import { fetchOffline } from "./offline.js";
+
+// Tarefa 1
+const e = new ErroHttp(503, "https://exemplo.test");
+console.log("T1:", e.name, "|", e.message, "|", new ErroMoeda("XYZ").message);
+
+// Tarefa 2
+const { base, data, taxas } = await obterTaxas("mzn", { fetch: fetchOffline });
+console.log("T2:", base, data, "USD:", taxas.get("USD"), "USDT:", taxas.has("USDT"));
+
+// Tarefas 3, 4, 5 e 6
+let tempoSimulado = 1_000_000;
+let pedidosFeitos = 0;
+
+const conversor = new ConversorCambio({
+  agora: () => tempoSimulado,
+  obterTaxas: async (moeda) => {
+    pedidosFeitos += 1;
+    return obterTaxas(moeda, { fetch: fetchOffline });
+  },
+});
+
+const conv1 = await conversor.converter(1500, "mzn", "usd");
+console.log("T3:", conv1);
+
+await conversor.converter(200, "MZN", "EUR");
+console.log("T4 (pedidos após 2 conversões seguidas):", pedidosFeitos); // deve ser 1
+
+tempoSimulado += 11 * 60 * 1000; // avança 11 minutos
+await conversor.converter(100, "MZN", "USD");
+console.log("T4 (pedidos após 11 min):", pedidosFeitos); // deve ser 2
+
+const varias = await conversor.converterParaVarias(1500, "MZN", ["USD", "ZAR", "EUR", "XYZ"]);
+console.log("T5:", varias);
+
+console.log("T6 resumo:", conversor.resumo());
+console.log("T6 moedasUsadas:", conversor.moedasUsadas());
+console.log("T6 desfazer:", conversor.desfazer()?.para);
