@@ -5,4 +5,4 @@ export const FONTES = [
 "https://latest.currency-api.pages.dev/v1/currencies",
 ];
 export const TEMPO_LIMITE_MS = 5000;
-export const VALIDADE_CACHE_MS = 10 * 60 * 1000; // 10
+export const VALIDADE_CACHE_MS = 10 * 60 * 1000; // 10 minutos
