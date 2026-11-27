@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #010911;
+  color: #1e293b;
+}
+
+.pagina {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(245, 243, 243, 0.986);
+}
+
+/* Ponto 1: Cabeçalho */
+.cabecalho {
+  background-color: #0a346e;
+  color: #ffffff;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cabecalho span {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+/* Ponto 2: Grelha de Produtos */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 2rem;
+}
+
+/* Ponto 3: Cartão de Produto */
+.cartao {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.imagem-placeholder {
+  width: 100%;
+  height: 90px;
+  background-color: #eef2f6;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.cartao h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.cartao .preco {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Ponto 4: Rodapé */
+.rodape {
+  background-color: #f1f5f9;
+  color: #020218;
+  text-align: center;
+  padding: 0.85rem;
+  font-size: 0.8rem;
+  border-top: 1px solid #e2e8f0;
+}
